@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="https://www.thymeleaf.org">
+    <head>
+        <title>Spring Security Example</title>
+    </head>
+    <body>
+        <h1>Welcome!</h1>
+
+        <p>Click <a th:href="@{/hello}">here</a> to see a greeting.</p>
+        
+	    <!-- 登出表單 -->
+	    <form th:action="@{/logout}" method="post">
+	        <button type="submit">Logout</button>
+	    </form>
+	    
+	    <!-- Admin頁面 -->
+	    <form th:action="@{/admin}" method="post">
+	        <button type="submit">Admin Page</button>
+	    </form>
+	    
+	     <!-- 讓Session無效化 -->
+	    <form th:action="@{/invalidSession}" method="post">
+	        <button type="submit">Invalid Session</button>
+	    </form>	    
+    </body>
+</html>
