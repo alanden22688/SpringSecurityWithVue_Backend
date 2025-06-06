@@ -28,7 +28,6 @@ import org.springframework.web.cors.CorsConfiguration;
 import org.springframework.web.cors.CorsConfigurationSource;
 import org.springframework.web.cors.UrlBasedCorsConfigurationSource;
 
-import com.alanden.security.CustomLogoutSuccessHandler;
 import com.alanden.security.JsonAuthenticationFailureHandler;
 import com.alanden.security.JsonAuthenticationSuccessHandler;
 import com.alanden.security.JsonUsernamePasswordAuthenticationFilter;
